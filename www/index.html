@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+    <script>
+    </script>
+</head>
+<body>
+    <div class="map" id="map-light"></div>
+    <div class="map" id="map-dark"></div>
+    <div class="controlsGroup">
+      <button id="add-marker">
+        <img src="assets/add-marker-light.svg" id="add-marker-light"/>
+        <img src="assets/add-marker-dark.svg" id="add-marker-dark"/>
+      </button>
+      <button id="view-coordenades">
+        <img src="assets/my-coordenades-light.svg" id="my-coordenades-light"/>
+        <img src="assets/my-coordenades-dark.svg" id="my-coordenades-dark"/>
+      </button>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <script src="https://kit.fontawesome.com/3b9fb27255.js" crossorigin="anonymous"></script>
+    <script src="components/plugins.js"></script>
+</body>
+</html>

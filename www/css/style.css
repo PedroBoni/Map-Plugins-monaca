@@ -1,0 +1,116 @@
+/**/
+
+*{margin: 0; padding: 0; box-sizing: border-box}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.map{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  top: 0;
+  left: 0;
+}
+.controlsGroup{
+  position: absolute;
+  width: 10vw;
+  left: 3vw;
+  bottom: 3vh;
+  z-index: 100; 
+  margin-bottom: 2vh;
+}
+.controlsGroup button{
+  border: 0.5vw solid #F9F9F9;
+  border-radius: 50%;
+  background: none;
+  width: 15vw;
+  height: 15vw;
+  outline: none;
+}
+.controlsGroup button + button{
+  margin-top: 1vh; 
+}
+.controlsGroup button img{
+  width: 6vw;
+  height: 6vw;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 14vw;
+  height: 4.5vh;
+  margin-top: 1vh;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  outline: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f3f3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 3.8vh;
+  width: 3.8vh;
+  left: 0.4vh;
+  bottom: 0.4vh;
+  background-color: #1d1d1d;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1d1d1d;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1d1d1d;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(3.7vh);
+  -ms-transform: translateX(3.7vh);
+  transform: translateX(3.7vh);
+  background-color: #f5f3f3;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#add-marker-dark,
+#my-coordenades-dark{
+  display: none;
+}
+
+.controlsGroup button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
